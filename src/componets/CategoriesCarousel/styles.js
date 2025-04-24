@@ -3,6 +3,13 @@ import styled from "styled-components";
 export const Container = styled.div`
   .carousel-item {
     padding-right: 40px;
+    padding-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
   }
 `;
 
@@ -36,17 +43,17 @@ export const ContainerItems = styled.div`
 
   display: flex;
   align-items: center;
-  padding: 20px 10px;
+  padding: 40px 20px;
   width: 100%;
   height: 200%;
 
   p {
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 30px;
-    border-radius: 30px;
-    font-size: 22.5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 20px;
     font-weight: bold; 
-    margin-top: 50px ;
+    margin-top: 80px ;
   }
 `;

@@ -3,9 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 import { api } from "../../services/api";
-import { Container } from "../../containers/Home/styles";
-import { Title } from "../../containers/login/styles";
-import { ContainerItems } from "./styles";
+import {Container, ContainerItems, Title } from "./styles";
 
 export function CategoriesCarousel() {
   const [categories, setCategories] = useState([]);
@@ -17,7 +15,7 @@ export function CategoriesCarousel() {
       setCategories(data);
       console.log(data);
     }
-      loadCategories();
+    loadCategories();
   }, []);
 
   const responsive = {

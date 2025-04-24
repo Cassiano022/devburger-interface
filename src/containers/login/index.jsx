@@ -39,9 +39,15 @@ export function Login() {
     resolver: yupResolver(schema),
   });
 
-  console.log(errors);
 
   const onSubmit = async (data) => {
+
+  //  const {data:users} = await api.post("/sessions", {
+  //     email: data.email,
+  //     password: data.password,
+  //   })
+
+  //   console.log(users)
     const {
       data: { token },
     } = await toast.promise(
