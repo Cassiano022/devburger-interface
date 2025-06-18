@@ -103,6 +103,7 @@ export function Register() {
          já possui conta? <Link to={"/login"}>Clique aqui</Link>
         </p>
       </RightContainer>
+       
     </Container>
   );
 }
