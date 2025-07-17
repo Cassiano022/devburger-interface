@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
-import { CardProduct } from "../../componets/CardProduct";
+import { CardProduct } from "../../components/CardProduct";
 import { api } from "../../services/api";
 import { formatPrice } from "../../utils/formatPrice";
 import {

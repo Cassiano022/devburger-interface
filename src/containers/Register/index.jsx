@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import * as yup from "yup";
 
 import logo from "../../assets/logo1.svg";
-import { Button } from "../../componets/Button";
+import { Button } from "../../components/Button";
 import { api } from "../../services/api";
 
 import {

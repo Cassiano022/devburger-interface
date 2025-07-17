@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 import { useCart } from "../../hooks/CartContext";
 import { CardImage, Container } from "./styles";
-import { CardButton } from "../CardButton";
+import { CardButton } from "../CartButton";
 
 export function CardProduct({ product }) {
   const { putProductInCart } = useCart();
