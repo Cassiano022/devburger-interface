@@ -1,18 +1,27 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { RouterProvider } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import { ToastContainer } from 'react-toastify'
+import { BrowserRouter } from 'react-router-dom'
 
-import { router } from "./routes";
-import GlobalStyles from "./styles/globalStyles";
-import AppProvider from "./hooks";
+import GlobalStyles from './styles/globalStyles'
+import AppProvider from './hooks'
+import { ThemeProvider } from 'styled-components'
+import { standardTheme } from './styles/themes/standard'
+import { Router } from './routes'
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <AppProvider>
-      <RouterProvider router={router} />
-      <GlobalStyles />
-      <ToastContainer autoClose={5000} theme="colored" />
-    </AppProvider>
-  </React.StrictMode>
-);
+
+
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <ThemeProvider theme={standardTheme}>
+      <AppProvider>
+        <GlobalStyles />
+          <BrowserRouter>
+            <Router/>
+          </BrowserRouter>
+        <ToastContainer autoClose={2000} theme='colored' />
+      </AppProvider>
+    </ThemeProvider>
+  </StrictMode>,
+)

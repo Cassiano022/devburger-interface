@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
 export const ContainerButton = styled.button`
-  background: #9758a6;
-  width: 200px;
-  height: 35px;
-  border: 0;
-  border-radius: 5px;
-  font-size: 16px;
-  color: #ffffff;
+    background-color: ${props => props.theme.purple};
+    width: 100%;
+    height: 52px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 30px;
+    color: #fff;
 
-  &:hover {
-    background-color: #6f357c;
-  }
-`;
+    &:hover{
+        background-color: #6f357c;
+    }
+
+
+`
