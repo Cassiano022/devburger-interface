@@ -1,8 +1,3 @@
-Para criar um README.md de alto nível para o seu GitHub, foquei em destacar a stack tecnológica que você já domina e a estrutura profissional do projeto (utilizando Vite, ESLint e Prettier) que os arquivos enviados demonstram.
-
-Como você mencionou o DevBurguer e o The Coffee Nook no seu currículo, aqui está um modelo robusto que você pode adaptar para qualquer um deles:
-+1
-
 🍔 DevBurguer - Sistema de Gestão de Vendas Full Stack
 Este projeto faz parte do meu portfólio de Desenvolvedor Full Stack  e consiste em uma aplicação completa para gerenciamento de pedidos de uma hamburgueria, focando em escalabilidade e experiência do usuário (UX).
 +1
